@@ -1,0 +1,118 @@
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --accent: #7c3aed; /* Purple accent */
+}
+/* --- GLOBAL & BACKGROUND --- */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+   background: linear-gradient(135deg, #1e1e2f 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- HERO SECTION (SKETCH MATCH) --- */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.profile-circle {
+    width: 220px;
+    height: 220px;
+    border: 3px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    background: rgba(255,255,255,0.1);
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text h1 {
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.hero-text h1 img{
+    width: 70px;
+    bottom: 50px;
+}
+
+
+/* --- TECH STACK BARS --- */
+.tech-stack-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.bar {
+    width: 100%;
+    height: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.fill {
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Colors matching your reference image */
+.java { background: #ff8f00; }
+.web { background: #4caf50; }
+.sql { background: #9c27b0; }
+.c-lang { background: #37474f; }
+
+/* --- BLOG BOXED CONTENT --- */
+.blog-box {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+.blog-date {
+    font-size: 0.8rem;
+    color: #ffca28;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* --- NAV BAR --- */
+.nav-bar { padding: 20px; display: flex; justify-content: center; }
+.nav-container a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+}
