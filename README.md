@@ -3,9 +3,9 @@
 ## Project Overview
 This project is a collaborative effort by **Vincent Valladolid** and **Vincent Andojar** for their **Web Systems and Technologies** course (BSIT 2B). The goal is to build a structured, professional portfolio website that showcases individual backgrounds, skills, and daily coding journeys through blog entries.
 
-## Meet the Team
-- **Vincent Valladolid** - BSIT 2B Student
-- **Vincent Andojar** - BSIT 2B Student
+## Meet the Duo
+- **Vincent Valladolid** 
+- **Vincent Gabriel Andojar** 
 
 ## Laboratory Goals
 - [x] Create a structured portfolio using HTML and CSS.
