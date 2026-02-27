@@ -315,10 +315,74 @@
             </div>
         </section>
 
-        <section id="work" class="section">
-            <h2 class="section-label">Selected Works</h2>
-            <div class="skills">
-                <p style="color: var(--muted); font-style: italic; font-size: 0.9rem;">Showcase coming soon...</p>
+        <section id="work" class="section projects-section">
+            <div class="projects-header">
+                <p class="section-tag-centered">MY WORK</p>
+                <h2 class="section-title-centered">Featured Projects</h2>
+                <div class="title-underline-small"></div>
+            </div>
+
+            <div class="filter-tabs">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">UI/UX Design</button>
+                <button class="filter-btn" onclick="comingSoon()">Web Dev</button>
+                <button class="filter-btn" onclick="comingSoon()">Mobile Apps</button>
+                <button class="filter-btn">Games</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Hello World Z Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-slideshow">
+                            <img src="images/games-project1.jpg" alt="Game Screenshot 1" class="slide active">
+                            <img src="images/games-project2.jpg" alt="Game Screenshot 2" class="slide">
+                            <img src="images/games-project3.jpg" alt="Game Screenshot 3" class="slide">
+                            <img src="images/games-project4.jpg" alt="Game Screenshot 4" class="slide">
+                            <img src="images/games-project5.jpg" alt="Game Screenshot 5" class="slide">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag tag-blue">Game</span>
+                            <span class="tag tag-purple">Java</span>
+                            <span class="tag tag-orange">2-Player</span>
+                        </div>
+                        <h3 class="project-title">Hello World Z</h3>
+                        <p class="project-description">
+                            A modified 2-player Snake and Ladder game built with Java.
+                            It features a unique twist where players must answer programming questions
+                            to progress.
+                        </p>
+                        <a href="https://github.com/wafellooo/Hello_World-Z-Rolling-Dice-Game-.git" target="_blank"
+                            class="btn-repo">
+                            View Repository <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-footer">
+                <a href="https://github.com/wafellooo" target="_blank" class="view-all-btn">View All Projects</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-label">Daily Blog</h2>
+            <div class="blog-entries">
+                <!-- Presence is shown first as requested -->
+                <a href="../blog/2026-02-21.html" class="blog-card">
+                    <div>
+                        <p class="date">FEBRUARY 21, 2026</p>
+                        <p class="preview">Presence</p>
+                    </div><span class="arrow">→</span>
+                </a>
+                <a href="../blog/2026-02-27.html" class="blog-card">
+                    <div>
+                        <p class="date">FEBRUARY 27, 2026</p>
+                        <p class="preview">ITS FUN ACTUALLY</p>
+                    </div><span class="arrow">→</span>
+                </a>
             </div>
         </section>
 
@@ -327,6 +391,27 @@
     <footer>
         <p>Vincent &nbsp;•&nbsp; BSIT 2B &nbsp;•&nbsp; 2026</p>
     </footer>
+
+    <script>
+        // Slideshow Logic
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        if (slides.length > 0) {
+            setInterval(nextSlide, 3000); // Change image every 3 seconds
+        }
+
+        // Filter Logic
+        function comingSoon() {
+            alert("This section is coming soon! Stay tuned.");
+        }
+    </script>
 </body>
 
 </html>

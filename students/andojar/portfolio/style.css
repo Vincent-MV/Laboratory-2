@@ -262,12 +262,10 @@
 /* ─── ABOUT ME SECTION ───────────────────── */
 .about-me {
     padding: 100px 0;
-    background: rgba(15, 12, 40, 0.4);
-    /* Subtle deep navy background */
-    border-top: 1px solid var(--p-glass-border);
-    border-bottom: 1px solid var(--p-glass-border);
-    margin: 40px -200vw;
-    /* Extend background to edges */
+    background: #f8fafc;
+    /* Light section */
+    color: #1e293b;
+    margin: 0 -200vw;
     padding-left: 200vw;
     padding-right: 200vw;
 }
@@ -289,7 +287,7 @@
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 20px;
-    color: white;
+    color: #0f172a;
 }
 
 .title-underline {
@@ -308,21 +306,22 @@
 }
 
 .about-card {
-    background: var(--p-glass);
-    border: 1px solid var(--p-glass-border);
+    background: white;
+    border: 1px solid #e2e8f0;
     border-radius: 24px;
     padding: 32px;
-    backdrop-filter: blur(12px);
-    transition: transform 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
 }
 
 .about-card:hover {
     transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
 }
 
 .about-card.dark-variant {
-    background: rgba(15, 23, 42, 0.4);
+    background: white;
+    /* Consistently light for readability */
 }
 
 .card-header {
@@ -349,7 +348,7 @@
 .card-header h3 {
     font-size: 1.25rem;
     font-weight: 700;
-    color: white;
+    color: #0f172a;
 }
 
 /* Profile Details */
@@ -360,7 +359,8 @@
 .info-group label {
     display: block;
     font-size: 0.75rem;
-    color: var(--p-text-muted);
+    color: #64748b;
+    /* Accessible dark grey */
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 6px;
@@ -369,7 +369,7 @@
 .info-group p {
     font-weight: 600;
     font-size: 1.1rem;
-    color: white;
+    color: #1e293b;
 }
 
 .info-group .sub {
@@ -380,7 +380,8 @@
 .goal-text {
     font-size: 0.95rem;
     line-height: 1.8;
-    color: var(--p-text-muted);
+    color: #475569;
+    /* Accessible dark grey */
     margin-bottom: 20px;
 }
 
@@ -395,7 +396,7 @@
     gap: 12px;
     margin-bottom: 12px;
     font-size: 0.95rem;
-    color: white;
+    color: #1e293b;
 }
 
 .list-icon {
@@ -414,12 +415,13 @@
     justify-content: space-between;
     margin-bottom: 8px;
     font-size: 0.85rem;
-    color: white;
+    color: #1e293b;
 }
 
 .progress-bar {
     height: 8px;
-    background: rgba(255, 255, 255, 0.1);
+    background: #f1f5f9;
+    /* Contrast background for track */
     border-radius: 10px;
     overflow: hidden;
 }
@@ -428,16 +430,16 @@
     height: 100%;
     background: var(--p-accent);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(129, 140, 248, 0.4);
+    box-shadow: 0 0 10px rgba(129, 140, 248, 0.2);
 }
 
 /* Hobbies */
 .hobbies-card {
-    background: var(--p-glass);
-    border: 1px solid var(--p-glass-border);
+    background: white;
+    border: 1px solid #e2e8f0;
     border-radius: 24px;
     padding: 32px;
-    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
 }
 
 .hobbies-tags {
@@ -447,12 +449,12 @@
 }
 
 .hobbies-tags span {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--p-glass-border);
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
     padding: 8px 18px;
     border-radius: 50px;
     font-size: 0.85rem;
-    color: var(--p-text-muted);
+    color: #475569;
     transition: all 0.3s;
     cursor: default;
 }
@@ -473,10 +475,10 @@
 /* ─── TOOLS & TECHNOLOGIES ───────────────── */
 .tools {
     padding: 100px 0;
-    background: #f8fafc;
-    /* Crisp light background */
-    color: #1e293b;
-    margin: 40px -200vw;
+    background: transparent;
+    /* Show global gradient */
+    color: white;
+    margin: 0 -200vw;
     padding-left: 200vw;
     padding-right: 200vw;
 }
@@ -500,14 +502,14 @@
 .section-title {
     font-size: 2.2rem;
     font-weight: 800;
-    color: #0f172a;
+    color: white;
 }
 
 .tools-subtitle {
     max-width: 450px;
     font-size: 1rem;
     line-height: 1.6;
-    color: #64748b;
+    color: var(--p-text-muted);
 }
 
 .tools-grid {
@@ -517,12 +519,14 @@
 }
 
 .tool-card {
-    background: white;
+    background: var(--p-glass);
+    border: 1px solid var(--p-glass-border);
     border-radius: 20px;
     padding: 30px 20px;
     text-align: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
 }
 
 .tool-card:hover {
@@ -533,54 +537,46 @@
 .tool-icon {
     width: 60px;
     height: 60px;
-    background: #f1f5f9;
     border-radius: 16px;
     margin: 0 auto 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #475569;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Tool Icons Color Coding */
 .figma {
-    color: #f24e1e;
-    background: rgba(242, 78, 30, 0.08);
+    background: rgba(242, 78, 30, 0.15);
 }
 
 .html {
-    color: #e34f26;
-    background: rgba(227, 79, 38, 0.08);
+    background: rgba(227, 79, 38, 0.15);
 }
 
 .css {
-    color: #1572b6;
-    background: rgba(21, 114, 182, 0.08);
+    background: rgba(21, 114, 182, 0.15);
 }
 
 .c {
-    color: #00599c;
-    background: rgba(0, 89, 156, 0.08);
+    background: rgba(0, 89, 156, 0.15);
 }
 
 .java {
-    color: #007396;
-    background: rgba(0, 115, 150, 0.08);
+    background: rgba(0, 115, 150, 0.15);
 }
 
 .unix {
-    color: #000000;
-    background: rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.1);
+    /* White/Light for Unix on dark */
 }
 
 .vibe {
-    color: #ff007f;
-    background: rgba(255, 0, 127, 0.08);
+    background: rgba(255, 0, 127, 0.18);
 }
 
 .flutter {
-    color: #02569b;
-    background: rgba(2, 86, 155, 0.08);
+    background: rgba(2, 86, 155, 0.15);
 }
 
 .tool-icon img {
@@ -641,13 +637,13 @@
 .tool-card h3 {
     font-size: 1.1rem;
     font-weight: 700;
-    color: #0f172a;
+    color: white;
     margin-bottom: 6px;
 }
 
 .tool-card p {
     font-size: 0.85rem;
-    color: #64748b;
+    color: var(--p-text-muted);
     font-weight: 500;
 }
 
@@ -708,4 +704,240 @@
     .floating-card.bottom-left {
         left: -20px;
     }
+}
+
+/* ─── PROJECTS SECTION ──────────────────────── */
+.projects-section {
+    padding: 100px 0;
+    background: white;
+    /* Contrast with tools */
+    color: #1e293b;
+    margin: 0 -200vw;
+    padding-left: 200vw;
+    padding-right: 200vw;
+}
+
+.projects-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-tag-centered {
+    color: var(--p-accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.section-title-centered {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 16px;
+}
+
+.title-underline-small {
+    width: 40px;
+    height: 3px;
+    background: #0f172a;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* Filter Tabs */
+.filter-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 24px;
+    border-radius: 50px;
+    border: none;
+    background: #f1f5f9;
+    color: #64748b;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background: #e2e8f0;
+    color: #0f172a;
+}
+
+.filter-btn.active {
+    background: #1e1b4b;
+    color: white;
+    box-shadow: 0 10px 15px -3px rgba(30, 27, 75, 0.3);
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    /* Standard card width */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.08);
+}
+
+.project-image {
+    width: 100%;
+    aspect-ratio: 1.5 / 1;
+    overflow: hidden;
+    background: #f8fafc;
+    position: relative;
+}
+
+.project-slideshow {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    object-fit: cover;
+}
+
+.slide.active {
+    opacity: 1;
+    position: relative;
+}
+
+.btn-repo {
+    margin-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #1e1b4b;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.btn-repo:hover {
+    color: var(--p-accent);
+    transform: translateX(5px);
+}
+
+.tag-orange {
+    background: rgba(249, 115, 22, 0.1);
+    color: #f97316;
+}
+
+.project-content {
+    padding: 28px;
+}
+
+.project-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.tag {
+    padding: 4px 14px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.tag-blue {
+    background: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+}
+
+.tag-purple {
+    background: rgba(139, 92, 246, 0.1);
+    color: #8b5cf6;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #64748b;
+}
+
+/* Footer Button */
+.projects-footer {
+    text-align: center;
+}
+
+.view-all-btn {
+    display: inline-block;
+    padding: 14px 36px;
+    border-radius: 12px;
+    border: 2px solid #1e1b4b;
+    color: #1e1b4b;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.view-all-btn:hover {
+    background: #1e1b4b;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(30, 27, 75, 0.2);
+}
+
+@media (max-width: 768px) {
+    .section-title-centered {
+        font-size: 1.8rem;
+    }
+
+    .project-card {
+        max-width: 100%;
+    }
+}
+
+/* Remove default global separator bar for this portfolio */
+.section-label::after {
+    display: none !important;
+}
+
+/* Blog Series Vibe - Bold Titles */
+.blog-card .preview {
+    font-size: 1.3rem !important;
+    font-weight: 700 !important;
+    color: white !important;
+    letter-spacing: -0.5px;
+    margin-top: 8px;
+    opacity: 1 !important;
 }
